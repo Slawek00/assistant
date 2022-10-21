@@ -59,17 +59,20 @@ export default {
 #user-baner{
   float: left;
   margin-left: 10px;
+  position: relative;
 }
 
 #user-baner h2{ /*znajdź lepszy sposób!!!*/
   margin: 0 auto;
   padding: 0;
   margin-top: 15px;
+  color: whitesmoke;
 }
 
 #user-baner p{
   margin: 0 auto;
   padding: 0;
+  color: whitesmoke;
 }
 
 #menu-option{
