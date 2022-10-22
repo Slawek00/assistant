@@ -7,7 +7,19 @@
     <button type="submit">Zobacz usługi</button>
   </div>
   <div id="container-about" class="centred-bottom">
-
+    <button type="submit">Czytaj więcej</button>
+  </div>
+  <div id="container-li">
+    <h1>Jak mogę Ci pomóc?</h1>
+    <ul>
+      <li>Obsługa administracyjna</li>
+      <li>Obsługa klienta</li>
+      <li>Zarządzanie projektami</li>
+      <li>Zarządzanie social mediami</li>
+      <li>Dane i badania</li>
+      <li>Osobisty asystent</li>
+    </ul>
+    <button type="submit">Zobacz plany</button>
   </div>
 </div>
 </template>
@@ -19,6 +31,12 @@ export default {
 </script>
 
 <style scoped>
+#content{
+  width: 100%;
+  height: 1000px;
+}
+
+
 img{
   height: 600px;
   width: 100%;
@@ -44,7 +62,7 @@ button:hover{
 
 #container-about{
   margin-top: 75px;
-  height: 300px;
+  height: 500px;
   width: 750px;
   background-color: white;
   box-shadow: 5px 5px 5px #444554;
