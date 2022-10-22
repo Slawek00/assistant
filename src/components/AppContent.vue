@@ -21,6 +21,12 @@
     </ul>
     <button type="submit">Zobacz plany</button>
   </div>
+  <div id="container-opinion">
+
+  </div>
+  <div id="container-link">
+
+  </div>
 </div>
 </template>
 
@@ -31,10 +37,7 @@ export default {
 </script>
 
 <style scoped>
-#content{
-  width: 100%;
-  height: 1000px;
-}
+
 
 
 img{
@@ -68,6 +71,24 @@ button:hover{
   box-shadow: 5px 5px 5px #444554;
 }
 
+#container-opinion{
+  width: 100%;
+  height: 500px;
+  background-color: #444554;
+}
+
+#container-li{
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+}
+
+#container-link{
+  width: 100%;
+  height: 800px;
+  background-color: #e3e7e6;
+}
+
 .centred{
   text-align: center;
   position: absolute;
@@ -82,5 +103,6 @@ button:hover{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 </style>
