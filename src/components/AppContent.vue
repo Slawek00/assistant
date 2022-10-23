@@ -1,12 +1,12 @@
 <template>
 <div id = content>
-  <img src="../assets/top-view-arrangement-of-natural-material-stationery.jpg" alt="banner">
-  <div id = "container" class="centred">
+  <div class="parallax"></div>
+  <div id = "container" class="centre-container">
     <h1>Wirtualny asystent</h1>
     <h1>dla Twojej firmy</h1>
     <button type="submit">Zobacz usługi</button>
   </div>
-  <div id="container-about" class="centred-bottom">
+  <div id="container-about" class="centre-container-about">
     <button type="submit">Czytaj więcej</button>
   </div>
   <div id="container-li">
@@ -22,10 +22,15 @@
     <button type="submit">Zobacz plany</button>
   </div>
   <div id="container-opinion">
-
+    <div class="opinion left-opinion"></div>
+    <div class="opinion center-opinion"></div>
+    <div class="opinion right-opinion"></div>
   </div>
   <div id="container-link">
-
+    <div id="container-link-content" class="center-content-container-link">
+    <h1>Przeniosę Twój biznes na wyższy poziom!</h1>
+    <button type="submit">Kontakt</button>
+    </div>
   </div>
 </div>
 </template>
@@ -37,14 +42,6 @@ export default {
 </script>
 
 <style scoped>
-
-
-
-img{
-  height: 600px;
-  width: 100%;
-}
-
 button{
   width: 150px;
   height: 40px;
@@ -53,9 +50,16 @@ button{
   color: #444554;
 }
 
-button:hover{
+#content button:hover{
+  background-color: #444554;
+  color: white;
+  transition: 500ms;
+}
+
+#container button:hover{
   background-color: whitesmoke;
-  transition: 600ms;
+  color: #444554;
+  transition: 500ms;
 }
 
 #container{
@@ -87,9 +91,25 @@ button:hover{
   width: 100%;
   height: 800px;
   background-color: #e3e7e6;
+  text-align: center;
 }
 
-.centred{
+.parallax{
+  background-image: url("../assets/top-view-arrangement-of-natural-material-stationery.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opinion{
+  width: 350px;
+  height: 400px;
+  background-color: white;
+}
+
+.centre-container{
   text-align: center;
   position: absolute;
   top: 50%;
@@ -97,12 +117,39 @@ button:hover{
   transform: translate(-50%, -50%);
 }
 
-.centred-bottom{
+.centre-container-about{
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.left-opinion{
+  position: absolute;
+  top: 310%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.center-opinion{
+  position: absolute;
+  top: 310%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right-opinion{
+  position: absolute;
+  top: 310%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.center-content-container-link{
+  position: absolute;
+  top: 390%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 </style>
