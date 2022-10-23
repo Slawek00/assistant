@@ -1,21 +1,20 @@
 <template>
 <AppMenu/>
   <AppContent/>
-  <AppFooter/>
 </template>
 
 <script>
 
 import AppMenu from "@/components/AppMenu";
 import AppContent from "@/components/AppContent";
-import AppFooter from "@/components/AppFooter";
+//import AppFooter from "@/components/AppFooter";
 
 export default {
   name: 'App',
   components: {
     AppMenu,
     AppContent,
-    AppFooter
+    //AppFooter
   },
 }
 
