@@ -6,6 +6,29 @@
     <h1>dla Twojej firmy</h1>
     <button type="submit">Zobacz usługi</button>
   </div>
+  <div id = container-services>
+    <h1>Jak mogę Ci pomóc?</h1>
+    <ul>
+      <li>Obsługa administracyjna</li>
+      <li>Obsługa klienta</li>
+      <li>Zarządzanie projektami</li>
+      <li>Zarządzanie social mediami</li>
+      <li>Dane i badania</li>
+      <li>Osobisty asystent</li>
+    </ul>
+    <button type="submit">Zobacz plany</button>
+  </div>
+  <div id="container-opinion">
+    <div class="opinion left-opinion"></div>
+    <div class="opinion center-opinion"></div>
+    <div class="opinion right-opinion"></div>
+  </div>
+  <div id="container-link">
+    <div id="container-link-content" class="center-content-container-link">
+      <h1>Przeniosę Twój biznes na wyższy poziom!</h1>
+      <button type="submit">Kontakt</button>
+    </div>
+  </div>
 </div>
 </template>
 
@@ -39,6 +62,27 @@ button{
 #container{
   position: absolute;
   color: #444554;
+}
+
+#container-services{
+  text-align: center;
+}
+
+#container-services ul{
+  list-style-type: none;
+}
+
+#container-opinion{
+  width: 100%;
+  height: 500px;
+  background-color: #444554;
+}
+
+#container-link{
+  width: 100%;
+  height: 800px;
+  background-color: #e3e7e6;
+  text-align: center;
 }
 
 .parallax{
