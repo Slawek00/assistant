@@ -1,7 +1,9 @@
 <template>
   <div id = "footer">
       <p class="left-p">Polityka prywatności</p>
+      <br>
       <p class="right-p">Polityka plików cookie</p>
+      <br>
       <p class="center-p">&copy;2022 Jarosław Witkowski</p>
   </div>
 </template>
@@ -21,15 +23,9 @@ export default {
       color: white;
     }
 
-    .left-p{
-
+    p{
+      margin: 0;
+      padding: 0;
     }
 
-    .right-p{
-
-    }
-
-    .center-p{
-
-    }
 </style>
