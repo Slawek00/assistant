@@ -3,17 +3,35 @@
   <div id="container-opinion">
       <h1>Zaufały mi firmy i przedsiębiorcy<br>
         z całego świata</h1>
-    <ul>
-      <li><img src="../assets/drupal.svg" alt="logo"></li>
-      <li><img src="../assets/digg.svg" alt="logo"></li>
-      <li><img src="../assets/pied-piper.svg" alt="logo"></li>
-    </ul>
-    <div class="opinion"></div>
-    <div class="opinion"></div>
-    <div class="opinion"></div>
+      <div id="container-logo">
+        <div id="logo-1"><img src="../assets/anchor-solid.svg" alt="logo"></div>
+        <div id="logo-2"><img src="../assets/blogger.svg" alt="logo"></div>
+        <div id="logo-3"><img src="../assets/drupal.svg" alt="logo"></div>
+        <div id="logo-4"><img src="../assets/digg.svg" alt="logo"></div>
+        <div id="logo-5"><img src="../assets/pied-piper.svg" alt="logo"></div>
+      </div>
+      <div id="opinion-one">
+        <h2>Zorganizowany i skuteczny</h2>
+      </div>
+      <div id="opinion-two">
+        <h2>Elastyczny i zangażowany</h2>
+      </div>
+      <div id="opinion-three">
+        <h2>Kreatywny i pomysłowy</h2>
+      </div>
   </div>
-  <div id="container-button">
-    <button type="submit">Kontakt</button>
+  <div id="contact">
+    <div id="container">
+    <div>
+      <img src="../assets/gadgety.png" alt="image">
+    </div>
+    <div>
+      <h1>Przeniosę Twój biznes na wyższy poziom!</h1>
+    </div>
+    <div>
+      <button type="submit">Kontakt</button>
+    </div>
+    </div>
   </div>
 </div>
 </template>
@@ -37,31 +55,80 @@ export default {
   padding-top: 120px;
 }
 
-#container-opinion ul{
-  margin-left: 23%;
-  padding: 30px;
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 200px;
-}
-
-#container-opinion li img{
-  width: 120px;
+#container-opinion img{
+  width: 150px;
   height: 100px;
 }
 
-#container-button{
+#container-logo{
   width: 100%;
-  height: 900px;
-  background-color: #e3e7e6;
+  display: grid;
+  grid-template-columns: 265px 265px 265px 265px 265px;
+  text-align: center;
+  margin-top: 100px;
 }
 
-#container-button button:hover{
+#contact{
+  width: 100%;
+  height: 800px;
+  background-color: #b9b9b9;
+}
+
+#container{
+  text-align: center;
+  position: absolute;
+  top: 500%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container img{
+  width: 400px;
+  height: 300px;
+}
+
+#opinion-one{
+  text-align: center;
+  position: absolute;
+  top: 420%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  height: 400px;
+  width: 25%;
+  color: black;
+}
+
+#opinion-two{
+  text-align: center;
+  position: absolute;
+  top: 420%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  height: 400px;
+  width: 25%;
+  color: black;
+}
+
+#opinion-three{
+  text-align: center;
+  position: absolute;
+  top: 420%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  height: 400px;
+  width: 25%;
+  color: black;
+}
+
+button:hover{
   background-color: #444554;
-  color: white;
+  color: whitesmoke;
   transition: 500ms;
-
 }
+
+
 
 </style>
